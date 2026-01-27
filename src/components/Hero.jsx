@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import { MousePointer2, ChevronDown } from 'lucide-react';
+import profileImg from '../assets/profile.png';
 
 const Hero = () => {
     return (
@@ -74,7 +75,7 @@ const Hero = () => {
                     <div className="relative z-10 w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden border-2 border-white/10 p-2 glass-morphism">
                         <div className="w-full h-full rounded-xl overflow-hidden bg-slate-800">
                              <img 
-                                src="/src/assets/profile.png" 
+                                src={profileImg} 
                                 alt="Ahmad Shahzad" 
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 hover:scale-100"
                             />
