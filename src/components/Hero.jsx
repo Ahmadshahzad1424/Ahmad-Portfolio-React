@@ -20,7 +20,7 @@ const Hero = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold tracking-widest uppercase mb-6">
                         Available for Freelance
                     </span>
-                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
                         Building Digital <br />
                         <span className="text-gradient">Experiences</span>
                     </h1>
@@ -44,7 +44,7 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <p className="text-lg text-slate-400 max-w-lg mb-10 leading-relaxed">
+                    <p className="text-base text-slate-400 max-w-lg mb-8 leading-relaxed">
                         I specialize in crafting high-performance, visually stunning web applications with modern technologies. 
                         Currently diving deep into the world of Agentic AI and Robotic Intelligence.
                     </p>
@@ -52,14 +52,14 @@ const Hero = () => {
                     <div className="flex flex-wrap gap-4">
                         <a 
                             href="#projects"
-                            className="px-8 py-4 bg-accent hover:bg-emerald-600 text-primary font-bold rounded-lg transition-all transform hover:-translate-y-1 flex items-center"
+                            className="px-6 py-3 bg-accent hover:bg-emerald-600 text-primary font-bold rounded-lg transition-all transform hover:-translate-y-1 flex items-center text-sm"
                         >
                             View Projects
-                            <MousePointer2 className="ml-2 w-5 h-5" />
+                            <MousePointer2 className="ml-2 w-4 h-4" />
                         </a>
                         <a 
                             href="#contact"
-                            className="px-8 py-4 border border-white/10 hover:bg-white/5 text-white font-bold rounded-lg transition-all"
+                            className="px-6 py-3 border border-white/10 hover:bg-white/5 text-white font-bold rounded-lg transition-all text-sm"
                         >
                             Contact Me
                         </a>

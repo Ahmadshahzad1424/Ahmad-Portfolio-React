@@ -61,7 +61,7 @@ const Skills = () => {
                             key={index}
                             variants={item}
                             whileHover={{ y: -5 }}
-                            className="p-8 rounded-2xl border border-white/5 bg-secondary/20 hover:bg-secondary/40 hover:border-accent/30 transition-all group flex flex-col items-center justify-center text-center relative overflow-hidden"
+                            className="p-6 rounded-2xl border border-white/5 bg-secondary/20 hover:bg-secondary/40 hover:border-accent/30 transition-all group flex flex-col items-center justify-center text-center relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <span className="text-[10px] font-mono text-accent">{skill.level}</span>
