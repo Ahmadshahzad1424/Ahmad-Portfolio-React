@@ -20,7 +20,7 @@ const Hero = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold tracking-widest uppercase mb-6">
                         Available for Freelance
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter">
+                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                         Building Digital <br />
                         <span className="text-gradient">Experiences</span>
                     </h1>
@@ -86,14 +86,14 @@ const Hero = () => {
                     <motion.div 
                         animate={{ y: [0, -10, 0] }}
                         transition={{ repeat: Infinity, duration: 3 }}
-                        className="absolute -top-6 -right-6 glass-morphism p-4 rounded-lg hidden lg:block"
+                        className="absolute -top-6 -right-6 glass-morphism p-4 rounded-lg hidden lg:block z-20"
                     >
                         <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
-                                <span className="text-accent text-xl font-bold">17+</span>
+                            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                                <span className="text-primary text-lg font-black">17+</span>
                             </div>
                             <div>
-                                <div className="text-xs text-slate-400">Personal</div>
+                                <div className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Personal</div>
                                 <div className="text-sm font-bold text-white">Projects</div>
                             </div>
                         </div>

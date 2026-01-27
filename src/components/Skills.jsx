@@ -1,17 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu } from 'lucide-react';
+import { 
+    SiHtml5, SiCss3, SiJavascript, SiReact, 
+    SiPython, SiMongodb, SiOracle, SiAdobephotoshop 
+} from 'react-icons/si';
 
 const Skills = () => {
     const skills = [
-        { name: 'HTML5', icon: 'https://img.icons8.com/color/50/000000/html-5.png', level: '95%' },
-        { name: 'CSS3', icon: 'https://img.icons8.com/color/50/000000/css3.png', level: '90%' },
-        { name: 'JavaScript', icon: 'https://img.icons8.com/color/50/000000/javascript.png', level: '85%' },
-        { name: 'React', icon: 'https://img.icons8.com/color/50/000000/react-native.png', level: '80%' },
-        { name: 'Python', icon: 'https://img.icons8.com/color/50/000000/python.png', level: '75%' },
-        { name: 'MERN Stack', icon: 'https://img.icons8.com/color/50/000000/web.png', level: '70%' },
-        { name: 'Oracle SQL', icon: 'https://img.icons8.com/color/48/000000/oracle-logo.png', level: '65%' },
-        { name: 'Adobe PS', icon: 'https://img.icons8.com/color/50/000000/adobe-photoshop.png', level: '80%' },
+        { name: 'HTML5', icon: <SiHtml5 className="w-10 h-10 text-[#E34F26]" />, level: '95%' },
+        { name: 'CSS3', icon: <SiCss3 className="w-10 h-10 text-[#1572B6]" />, level: '90%' },
+        { name: 'JavaScript', icon: <SiJavascript className="w-10 h-10 text-[#F7DF1E]" />, level: '85%' },
+        { name: 'React', icon: <SiReact className="w-10 h-10 text-[#61DAFB]" />, level: '80%' },
+        { name: 'Python', icon: <SiPython className="w-10 h-10 text-[#3776AB]" />, level: '75%' },
+        { name: 'MERN Stack', icon: <SiMongodb className="w-10 h-10 text-[#47A248]" />, level: '70%' },
+        { name: 'Oracle SQL', icon: <SiOracle className="w-10 h-10 text-[#F80000]" />, level: '65%' },
+        { name: 'Adobe PS', icon: <SiAdobephotoshop className="w-10 h-10 text-[#31A8FF]" />, level: '80%' },
     ];
 
     const container = {
@@ -63,7 +67,7 @@ const Skills = () => {
                                 <span className="text-[10px] font-mono text-accent">{skill.level}</span>
                             </div>
                             <div className="w-16 h-16 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110">
-                                <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
+                                {skill.icon}
                             </div>
                             <h3 className="text-white font-bold tracking-wide">{skill.name}</h3>
                             <div className="mt-4 w-full h-1 bg-white/5 rounded-full overflow-hidden">
