@@ -23,7 +23,7 @@ const About = () => {
                             <User className="w-5 h-5" />
                             <span className="font-mono text-sm tracking-widest uppercase font-bold">About Me</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                             Crafting pixels, <br />
                             <span className="text-slate-500">Mastering logic.</span>
                         </h2>
@@ -61,6 +61,7 @@ const About = () => {
                     >
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
+<<<<<<< HEAD
                                 <div className="h-64 rounded-2xl bg-gradient-to-br from-accent/20 to-primary border border-white/5 p-8 flex flex-col justify-end group hover:border-accent/30 transition-all shadow-xl hover:shadow-accent/5">
                                     <h4 className="text-2xl font-black text-white group-hover:text-accent transition-colors">Architect</h4>
                                     <p className="text-sm text-slate-400 font-medium">Designing systems that last</p>
@@ -76,6 +77,23 @@ const About = () => {
                                 <div className="h-64 rounded-2xl bg-gradient-to-tr from-[#112240] to-primary border border-white/5 p-8 flex flex-col justify-end group hover:border-highlight/30 transition-all shadow-xl hover:shadow-highlight/5">
                                     <h4 className="text-2xl font-black text-white group-hover:text-highlight transition-colors">Full Stack</h4>
                                     <p className="text-sm text-slate-400 font-medium">Bridging Frontend & Logic</p>
+=======
+                                <div className="h-52 rounded-2xl bg-gradient-to-br from-accent/20 to-primary border border-white/5 p-6 flex flex-col justify-end">
+                                    <h4 className="text-xl font-bold text-white">Innovation</h4>
+                                    <p className="text-xs text-slate-400">Always learning new tech</p>
+                                </div>
+                                <div className="h-32 rounded-2xl bg-secondary border border-white/5 flex items-center justify-center">
+                                    <span className="text-accent text-4xl font-bold tracking-tighter">AI</span>
+                                </div>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="h-32 rounded-2xl bg-highlight/20 border border-white/5 flex items-center justify-center">
+                                    <span className="text-highlight text-4xl font-bold tracking-tighter">UI/UX</span>
+                                </div>
+                                <div className="h-52 rounded-2xl bg-gradient-to-tr from-secondary to-primary border border-white/5 p-6 flex flex-col justify-end">
+                                    <h4 className="text-xl font-bold text-white">Clean Code</h4>
+                                    <p className="text-xs text-slate-400">Maintainable & Scalable</p>
+>>>>>>> b4864b745af08b49b6f50518f519045be4559c14
                                 </div>
                             </div>
                         </div>

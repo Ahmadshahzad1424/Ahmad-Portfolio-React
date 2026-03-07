@@ -7,6 +7,7 @@ export default {
   theme: {
     container: {
       center: true,
+<<<<<<< HEAD
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
@@ -19,6 +20,10 @@ export default {
         md: '768px',
         lg: '1024px',
         xl: '1280px',
+=======
+      padding: '1.5rem',
+      screens: {
+>>>>>>> b4864b745af08b49b6f50518f519045be4559c14
         '2xl': '1400px',
       },
     },

@@ -47,7 +47,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-4 glass-morphism' : 'py-6 bg-transparent'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 glass-morphism' : 'py-4 bg-transparent'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <motion.div 
                     initial={{ opacity: 0, x: -20 }}
