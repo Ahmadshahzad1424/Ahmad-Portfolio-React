@@ -50,11 +50,11 @@ const Contact = () => {
     useEffect(() => {
         if (toast.show) {
             const timer = setTimeout(() => {
-                setToast({ ...toast, show: false });
+                setToast((prev) => ({ ...prev, show: false }));
             }, 3000);
             return () => clearTimeout(timer);
         }
-    }, [toast]);
+    }, [toast.show]);
 
     return (
         <section id="contact" className="py-24 bg-secondary/30 relative">
@@ -156,14 +156,14 @@ const Contact = () => {
                                         name="name"
                                         required
                                         placeholder="Ahmad Shahzad"
-                                        className="w-full bg-primary/50 border border-white/5 rounded-xl px-4 py-3 text-white"
+                                        className="w-full bg-primary/50 border border-white/5 focus:border-accent/50 focus:outline-none rounded-xl px-4 py-3 text-white placeholder-slate-600 transition-colors"
                                     />
                                     <input
                                         name="email"
                                         type="email"
                                         required
                                         placeholder="ahmadshahzad2414@gmail.com"
-                                        className="w-full bg-primary/50 border border-white/5 rounded-xl px-4 py-3 text-white"
+                                        className="w-full bg-primary/50 border border-white/5 focus:border-accent/50 focus:outline-none rounded-xl px-4 py-3 text-white placeholder-slate-600 transition-colors"
                                     />
                                 </div>
 
@@ -172,7 +172,7 @@ const Contact = () => {
                                     required
                                     rows="5"
                                     placeholder="Hello Ahmad, I want to discuss a MERN / frontend project..."
-                                    className="w-full bg-primary/50 border border-white/5 rounded-xl px-4 py-4 text-white resize-none"
+                                    className="w-full bg-primary/50 border border-white/5 focus:border-accent/50 focus:outline-none rounded-xl px-4 py-4 text-white placeholder-slate-600 resize-none transition-colors"
                                 />
 
                                 <button

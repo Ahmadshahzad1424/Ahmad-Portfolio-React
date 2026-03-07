@@ -10,7 +10,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/netflix.png",
             link: "https://netflixclonehhmad-git-main-ahmadshahzad1424s-projects.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["React", "Tailwind", "Firebase"]
+            tags: ["React", "Tailwind", "Firebase"],
+            description: "A feature-rich streaming platform simulation with dynamic content fetching, user authentication, and a responsive movie browser."
         },
         {
             title: "FoodPanda Clone",
@@ -18,7 +19,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/FoodPanda.png",
             link: "https://food-panda-z9ws.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["HTML", "CSS", "JS"]
+            tags: ["HTML", "CSS", "JS"],
+            description: "High-fidelity recreation of a food ordering interface focusing on pixel-perfect alignment and interactive menu navigation."
         },
         {
             title: "Country API Explorer",
@@ -26,7 +28,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/Country%20API.png",
             link: "https://country-api-two-tau.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["React", "REST API"]
+            tags: ["React", "REST API"],
+            description: "Real-time data visualization tool for global statistics, featuring complex filtering, searching, and detailed breakdown of nation data."
         },
         {
             title: "Age Calculator",
@@ -34,7 +37,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/Age_calculator.png",
             link: "https://age-calculator-eight-smoky.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["JavaScript", "CSS"]
+            tags: ["JavaScript", "CSS"],
+            description: "Precision chronometric calculator focusing on date logic, leap year handling, and instant mathematical feedback."
         },
         {
             title: "QR Code Generator",
@@ -42,7 +46,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/QR_Code_Generator.png",
             link: "https://qr-code-generator-virid-chi.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["JS", "API"]
+            tags: ["JS", "API"],
+            description: "Instant data-to-matrix engine allowing users to generate high-resolution QR codes for custom text and URLs."
         },
         {
             title: "Text to Speech",
@@ -50,7 +55,8 @@ const Projects = () => {
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/Text%20to%20Speech.png",
             link: "https://text-into-speech.vercel.app/",
             github: "https://github.com/ahmadshahzad1424",
-            tags: ["JavaScript", "Speech API"]
+            tags: ["JavaScript", "Speech API"],
+            description: "Assistive technology tool utilizing Native Web Speech synthesis for real-time voice synthesis from text input."
         }
     ];
 
@@ -72,7 +78,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
@@ -80,38 +86,51 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group relative overflow-hidden rounded-2xl bg-primary border border-white/5"
+                            className="group relative flex flex-col h-[500px] overflow-hidden rounded-3xl bg-[#112240] border border-white/5 hover:border-accent/30 transition-all duration-500 shadow-2xl"
                         >
-                            <div className="aspect-video overflow-hidden">
+                            {/* Project Image */}
+                            <div className="relative h-64 overflow-hidden">
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
                                 />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#112240] via-transparent to-transparent" />
+                                
+                                {/* Overlay Badges */}
+                                <div className="absolute top-6 left-6 flex flex-wrap gap-2">
+                                    {project.tags.slice(0, 2).map(tag => (
+                                        <span key={tag} className="text-[10px] font-black px-3 py-1 transparent-glass rounded-lg text-white uppercase tracking-widest border border-white/10 backdrop-blur-md">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                             
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
-                                <div className="space-y-4">
-                                    <div className="flex flex-wrap gap-2">
-                                        {project.tags.map(tag => (
-                                            <span key={tag} className="text-[10px] font-bold px-2 py-1 rounded bg-accent/20 text-accent uppercase tracking-wider">{tag}</span>
-                                        ))}
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-white">{project.title}</h3>
-                                    <div className="flex items-center space-x-4">
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white text-primary hover:bg-accent transition-colors">
+                            {/* Project Content */}
+                            <div className="p-8 flex flex-col flex-1 relative">
+                                <span className="text-accent text-[10px] font-black tracking-[0.3em] uppercase mb-2">
+                                    {project.category}
+                                </span>
+                                <h3 className="text-3xl font-black text-white group-hover:text-accent transition-colors mb-4 leading-tight">
+                                    {project.title}
+                                </h3>
+                                <p className="text-slate-400 text-sm leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
+                                    {project.description || "A high-performance implementation focusing on scalability and modern user experience patterns."}
+                                </p>
+
+                                {/* Action Bar - Hidden initially, Slides up on hover */}
+                                <div className="mt-auto flex items-center justify-between opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                                    <div className="flex items-center space-x-3">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl bg-accent text-primary hover:bg-emerald-400 transition-all shadow-glow hover:scale-110">
                                             <ExternalLink className="w-5 h-5" />
                                         </a>
-                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl bg-white/5 text-white hover:bg-white/10 transition-all border border-white/10 hover:scale-110">
                                             <Github className="w-5 h-5" />
                                         </a>
                                     </div>
+                                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Case Study</span>
                                 </div>
-                            </div>
-
-                            <div className="p-6 block group-hover:hidden transition-all">
-                                <span className="text-accent text-[10px] font-bold tracking-widest uppercase">{project.category}</span>
-                                <h3 className="text-xl font-bold text-white mt-2">{project.title}</h3>
                             </div>
                         </motion.div>
                     ))}

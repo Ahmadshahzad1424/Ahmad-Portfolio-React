@@ -5,8 +5,8 @@ import { User, GraduationCap, MapPin, Calendar } from 'lucide-react';
 const About = () => {
     const details = [
         { icon: <MapPin className="w-5 h-5" />, label: 'Location', value: 'Peshawar, Pakistan' },
-        { icon: <GraduationCap className="w-5 h-5" />, label: 'Degree', value: 'BS Artificial Intelligence' },
-        { icon: <Calendar className="w-5 h-5" />, label: 'Experience', value: 'Fresh Developer' },
+        { icon: <GraduationCap className="w-5 h-5" />, label: 'Specialization', value: 'Agentic Intelligence' },
+        { icon: <Calendar className="w-5 h-5" />, label: 'Status', value: 'Active Academic Researcher' },
     ];
 
     return (
@@ -61,21 +61,21 @@ const About = () => {
                     >
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
-                                <div className="h-64 rounded-2xl bg-gradient-to-br from-accent/20 to-primary border border-white/5 p-8 flex flex-col justify-end">
-                                    <h4 className="text-2xl font-bold text-white">Innovation</h4>
-                                    <p className="text-sm text-slate-400">Always learning new tech</p>
+                                <div className="h-64 rounded-2xl bg-gradient-to-br from-accent/20 to-primary border border-white/5 p-8 flex flex-col justify-end group hover:border-accent/30 transition-all shadow-xl hover:shadow-accent/5">
+                                    <h4 className="text-2xl font-black text-white group-hover:text-accent transition-colors">Architect</h4>
+                                    <p className="text-sm text-slate-400 font-medium">Designing systems that last</p>
                                 </div>
-                                <div className="h-40 rounded-2xl bg-secondary border border-white/5 flex items-center justify-center">
-                                    <span className="text-accent text-5xl font-bold tracking-tighter">AI</span>
+                                <div className="h-40 rounded-2xl bg-[#112240] border border-white/5 flex items-center justify-center group hover:scale-[1.02] transition-transform">
+                                    <span className="text-accent text-5xl font-black tracking-tighter opacity-80 group-hover:opacity-100">LLM</span>
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="h-40 rounded-2xl bg-highlight/20 border border-white/5 flex items-center justify-center">
-                                    <span className="text-highlight text-5xl font-bold tracking-tighter">UI/UX</span>
+                                <div className="h-40 rounded-2xl bg-highlight/10 border border-white/5 flex items-center justify-center group hover:scale-[1.02] transition-transform">
+                                    <span className="text-highlight text-5xl font-black tracking-tighter opacity-80 group-hover:opacity-100">AI</span>
                                 </div>
-                                <div className="h-64 rounded-2xl bg-gradient-to-tr from-secondary to-primary border border-white/5 p-8 flex flex-col justify-end">
-                                    <h4 className="text-2xl font-bold text-white">Clean Code</h4>
-                                    <p className="text-sm text-slate-400">Maintainable & Scalable</p>
+                                <div className="h-64 rounded-2xl bg-gradient-to-tr from-[#112240] to-primary border border-white/5 p-8 flex flex-col justify-end group hover:border-highlight/30 transition-all shadow-xl hover:shadow-highlight/5">
+                                    <h4 className="text-2xl font-black text-white group-hover:text-highlight transition-colors">Full Stack</h4>
+                                    <p className="text-sm text-slate-400 font-medium">Bridging Frontend & Logic</p>
                                 </div>
                             </div>
                         </div>

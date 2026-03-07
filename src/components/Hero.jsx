@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { MousePointer2, ChevronDown } from 'lucide-react';
+import { MousePointer2, ChevronDown, Github, Linkedin, FileText, Bot } from 'lucide-react';
+import profileImg from '../assets/profile.png';
 
 const Hero = () => {
     return (
@@ -19,7 +20,7 @@ const Hero = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold tracking-widest uppercase mb-6">
                         Available for Freelance
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter">
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
                         Building Digital <br />
                         <span className="text-gradient">Experiences</span>
                     </h1>
@@ -43,25 +44,39 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <p className="text-lg text-slate-400 max-w-lg mb-10 leading-relaxed">
-                        I specialize in crafting high-performance, visually stunning web applications with modern technologies. 
-                        Currently diving deep into the world of Agentic AI and Robotic Intelligence.
-                    </p>
+                   <p className="text-lg md:text-xl text-slate-100/70 max-w-2xl mb-10 leading-relaxed font-medium">
+    I specialize in crafting high-performance, visually stunning web applications with modern technologies. 
+    Currently diving deep into the world of 
+    <span className="text-highlight/90 font-bold"> Agentic AI</span> and 
+    <span className="text-accent/90 font-bold"> Robotic Intelligence</span>.
+</p>
 
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 mb-10">
                         <a 
                             href="#projects"
-                            className="px-8 py-4 bg-accent hover:bg-emerald-600 text-primary font-bold rounded-lg transition-all transform hover:-translate-y-1 flex items-center"
+                            className="px-8 py-4 bg-accent hover:bg-emerald-600 text-primary font-black rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] transform hover:-translate-y-1 flex items-center text-sm uppercase tracking-widest"
                         >
                             View Projects
-                            <MousePointer2 className="ml-2 w-5 h-5" />
+                            <MousePointer2 className="ml-2 w-4 h-4" />
                         </a>
                         <a 
-                            href="#contact"
-                            className="px-8 py-4 border border-white/10 hover:bg-white/5 text-white font-bold rounded-lg transition-all"
+                            href="#" 
+                            className="px-8 py-4 border border-white/10 hover:bg-white/5 text-white font-black rounded-xl transition-all flex items-center text-sm uppercase tracking-widest group"
                         >
-                            Contact Me
+                            <FileText className="mr-2 w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                            Resume
                         </a>
+                    </div>
+
+                    <div className="flex items-center space-x-6">
+                        <a href="https://github.com/ahmadshahzad1424" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors transform hover:scale-110">
+                            <Github className="w-6 h-6" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmad-shahzad-14f24/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors transform hover:scale-110">
+                            <Linkedin className="w-6 h-6" />
+                        </a>
+                        <div className="h-px w-12 bg-slate-800" />
+                        <span className="text-[10px] font-mono text-slate-600 uppercase tracking-[0.3em] font-bold">Connect on socials</span>
                     </div>
                 </motion.div>
 
@@ -74,7 +89,7 @@ const Hero = () => {
                     <div className="relative z-10 w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden border-2 border-white/10 p-2 glass-morphism">
                         <div className="w-full h-full rounded-xl overflow-hidden bg-slate-800">
                              <img 
-                                src="/src/assets/profile.png" 
+                                src={profileImg} 
                                 alt="Ahmad Shahzad" 
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 hover:scale-100"
                             />
@@ -84,16 +99,16 @@ const Hero = () => {
                     {/* Floating cards / labels */}
                     <motion.div 
                         animate={{ y: [0, -10, 0] }}
-                        transition={{ repeat: Infinity, duration: 3 }}
-                        className="absolute -top-6 -right-6 glass-morphism p-4 rounded-lg hidden lg:block"
+                        transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                        className="absolute -top-10 -right-6 glass-morphism p-5 rounded-2xl hidden lg:block z-20 border-white/20 shadow-2xl"
                     >
-                        <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
-                                <span className="text-accent text-xl font-bold">17+</span>
+                        <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-accent to-emerald-400 flex items-center justify-center shadow-glow">
+                                <span className="text-primary text-lg font-black tracking-tighter">17+</span>
                             </div>
                             <div>
-                                <div className="text-xs text-slate-400">Personal</div>
-                                <div className="text-sm font-bold text-white">Projects</div>
+                                <div className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-black">Personal</div>
+                                <div className="text-sm font-black text-white">Projects</div>
                             </div>
                         </div>
                     </motion.div>
