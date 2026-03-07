@@ -24,10 +24,10 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#0f172a", // Slate 900
-        secondary: "#1e293b", // Slate 800
-        accent: "#10b981", // Emerald 500
-        highlight: "#38bdf8", // Cyan 400
+        primary: "#0f172a",
+        secondary: "#1e293b",
+        accent: "#10b981",
+        highlight: "#38bdf8",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
@@ -37,4 +37,3 @@ export default {
   },
   plugins: [],
 }
-

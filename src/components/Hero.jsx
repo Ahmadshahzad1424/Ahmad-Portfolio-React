@@ -1,11 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-<<<<<<< HEAD
 import { MousePointer2, ChevronDown, Github, Linkedin, FileText, Bot } from 'lucide-react';
-=======
-import { MousePointer2, ChevronDown } from 'lucide-react';
->>>>>>> b4864b745af08b49b6f50518f519045be4559c14
 import profileImg from '../assets/profile.png';
 
 const Hero = () => {
@@ -48,40 +44,24 @@ const Hero = () => {
                         </span>
                     </div>
 
-<<<<<<< HEAD
                    <p className="text-lg md:text-xl text-slate-100/70 max-w-2xl mb-10 leading-relaxed font-medium">
     I specialize in crafting high-performance, visually stunning web applications with modern technologies. 
     Currently diving deep into the world of 
     <span className="text-highlight/90 font-bold"> Agentic AI</span> and 
     <span className="text-accent/90 font-bold"> Robotic Intelligence</span>.
 </p>
-=======
-                    <p className="text-base text-slate-400 max-w-lg mb-8 leading-relaxed">
-                        I specialize in crafting high-performance, visually stunning web applications with modern technologies. 
-                        Currently diving deep into the world of Agentic AI and Robotic Intelligence.
-                    </p>
->>>>>>> b4864b745af08b49b6f50518f519045be4559c14
 
                     <div className="flex flex-wrap gap-4 mb-10">
                         <a 
                             href="#projects"
-<<<<<<< HEAD
                             className="px-8 py-4 bg-accent hover:bg-emerald-600 text-primary font-black rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] transform hover:-translate-y-1 flex items-center text-sm uppercase tracking-widest"
-=======
-                            className="px-6 py-3 bg-accent hover:bg-emerald-600 text-primary font-bold rounded-lg transition-all transform hover:-translate-y-1 flex items-center text-sm"
->>>>>>> b4864b745af08b49b6f50518f519045be4559c14
                         >
                             View Projects
                             <MousePointer2 className="ml-2 w-4 h-4" />
                         </a>
                         <a 
-<<<<<<< HEAD
                             href="#" 
                             className="px-8 py-4 border border-white/10 hover:bg-white/5 text-white font-black rounded-xl transition-all flex items-center text-sm uppercase tracking-widest group"
-=======
-                            href="#contact"
-                            className="px-6 py-3 border border-white/10 hover:bg-white/5 text-white font-bold rounded-lg transition-all text-sm"
->>>>>>> b4864b745af08b49b6f50518f519045be4559c14
                         >
                             <FileText className="mr-2 w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
                             Resume
@@ -119,7 +99,6 @@ const Hero = () => {
                     {/* Floating cards / labels */}
                     <motion.div 
                         animate={{ y: [0, -10, 0] }}
-<<<<<<< HEAD
                         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                         className="absolute -top-10 -right-6 glass-morphism p-5 rounded-2xl hidden lg:block z-20 border-white/20 shadow-2xl"
                     >
@@ -130,18 +109,6 @@ const Hero = () => {
                             <div>
                                 <div className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-black">Personal</div>
                                 <div className="text-sm font-black text-white">Projects</div>
-=======
-                        transition={{ repeat: Infinity, duration: 3 }}
-                        className="absolute -top-6 -right-6 glass-morphism p-4 rounded-lg hidden lg:block z-20"
-                    >
-                        <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                                <span className="text-primary text-lg font-black">17+</span>
-                            </div>
-                            <div>
-                                <div className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Personal</div>
-                                <div className="text-sm font-bold text-white">Projects</div>
->>>>>>> b4864b745af08b49b6f50518f519045be4559c14
                             </div>
                         </div>
                     </motion.div>
