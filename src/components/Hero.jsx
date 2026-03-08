@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import { MousePointer2, ChevronDown, Github, Linkedin, FileText, Bot } from 'lucide-react';
-import profileImg from '../assets/profile.png';
+import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
     return (
