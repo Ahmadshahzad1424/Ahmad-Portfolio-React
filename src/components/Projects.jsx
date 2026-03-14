@@ -5,6 +5,33 @@ import { ExternalLink, Github, Layers } from 'lucide-react';
 const Projects = () => {
     const projects = [
         {
+            title: "Fawad Printer",
+            category: "Web App",
+            image: "https://images.unsplash.com/photo-1612815154858-60aa4c59acea?q=80&w=1000&auto=format&fit=crop",
+            link: "https://fawad-printer.web.app/",
+            github: "https://github.com/Ahmadshahzad1424/Fawad-printer",
+            tags: ["HTML", "CSS", "JS"],
+            description: "A comprehensive web application for managing printing services, showcasing responsive design and clear user interactions."
+        },
+        {
+            title: "Humanoid Robotics",
+            category: "Hackathon Project",
+            image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000&auto=format&fit=crop",
+            link: "https://hackathon-i-physical-ai-humanoid-ro-tau.vercel.app",
+            github: "https://github.com/Ahmadshahzad1424/Hackathon-I_-Physical-AI---Humanoid-Robotics",
+            tags: ["MDX", "React", "Next.js"],
+            description: "An innovative project developed during a hackathon that explores the integration of Physical AI with Humanoid Robotics, emphasizing cutting-edge tech concepts."
+        },
+        {
+            title: "Wedding Hall",
+            category: "Web App",
+            image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop",
+            link: "https://github.com/Ahmadshahzad1424/Wedding_Hall",
+            github: "https://github.com/Ahmadshahzad1424/Wedding_Hall",
+            tags: ["JavaScript", "HTML", "CSS"],
+            description: "A digital booking platform and informational site designed specifically for a wedding hall, enabling seamless event planning and management."
+        },
+        {
             title: "Netflix Clone",
             category: "Web App",
             image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/netflix.png",
@@ -30,33 +57,6 @@ const Projects = () => {
             github: "https://github.com/ahmadshahzad1424",
             tags: ["React", "REST API"],
             description: "Real-time data visualization tool for global statistics, featuring complex filtering, searching, and detailed breakdown of nation data."
-        },
-        {
-            title: "Age Calculator",
-            category: "Utility Tool",
-            image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/Age_calculator.png",
-            link: "https://age-calculator-eight-smoky.vercel.app/",
-            github: "https://github.com/ahmadshahzad1424",
-            tags: ["JavaScript", "CSS"],
-            description: "Precision chronometric calculator focusing on date logic, leap year handling, and instant mathematical feedback."
-        },
-        {
-            title: "QR Code Generator",
-            category: "Mini Tool",
-            image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/QR_Code_Generator.png",
-            link: "https://qr-code-generator-virid-chi.vercel.app/",
-            github: "https://github.com/ahmadshahzad1424",
-            tags: ["JS", "API"],
-            description: "Instant data-to-matrix engine allowing users to generate high-resolution QR codes for custom text and URLs."
-        },
-        {
-            title: "Text to Speech",
-            category: "Web Speech API",
-            image: "https://raw.githubusercontent.com/ahmadshahzad1424/Ahmad-Shahzad-portfolio-/main/img/Text%20to%20Speech.png",
-            link: "https://text-into-speech.vercel.app/",
-            github: "https://github.com/ahmadshahzad1424",
-            tags: ["JavaScript", "Speech API"],
-            description: "Assistive technology tool utilizing Native Web Speech synthesis for real-time voice synthesis from text input."
         }
     ];
 
