@@ -59,13 +59,13 @@ const Hero = () => {
                             View Projects
                             <MousePointer2 className="ml-2 w-4 h-4" />
                         </a>
-                        <a 
+                        {/* <a 
                             href="#" 
                             className="px-8 py-4 border border-white/10 hover:bg-white/5 text-white font-black rounded-xl transition-all flex items-center text-sm uppercase tracking-widest group"
                         >
                             <FileText className="mr-2 w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
                             Resume
-                        </a>
+                        </a> */}
                     </div>
 
                     <div className="flex items-center space-x-6">
