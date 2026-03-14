@@ -1,13 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Layers } from 'lucide-react';
+import fawadPrinterImg from '../assets/projects/fawad-printer.png';
+import humanoidRoboticsImg from '../assets/projects/humanoid-robotics.png';
+import weddingHallImg from '../assets/projects/wedding-hall.png';
 
 const Projects = () => {
     const projects = [
         {
             title: "Fawad Printer",
             category: "Web App",
-            image: "https://images.unsplash.com/photo-1612815154858-60aa4c59acea?q=80&w=1000&auto=format&fit=crop",
+            image: fawadPrinterImg,
             link: "https://fawad-printer.web.app/",
             github: "https://github.com/Ahmadshahzad1424/Fawad-printer",
             tags: ["HTML", "CSS", "JS"],
@@ -16,7 +19,7 @@ const Projects = () => {
         {
             title: "Humanoid Robotics",
             category: "Hackathon Project",
-            image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000&auto=format&fit=crop",
+            image: humanoidRoboticsImg,
             link: "https://hackathon-i-physical-ai-humanoid-ro-tau.vercel.app",
             github: "https://github.com/Ahmadshahzad1424/Hackathon-I_-Physical-AI---Humanoid-Robotics",
             tags: ["MDX", "React", "Next.js"],
@@ -25,7 +28,7 @@ const Projects = () => {
         {
             title: "Wedding Hall",
             category: "Web App",
-            image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop",
+            image: weddingHallImg,
             link: "https://github.com/Ahmadshahzad1424/Wedding_Hall",
             github: "https://github.com/Ahmadshahzad1424/Wedding_Hall",
             tags: ["JavaScript", "HTML", "CSS"],
