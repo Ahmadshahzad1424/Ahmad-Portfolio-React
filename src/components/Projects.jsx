@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ExternalLink, Github, Layers, ArrowUpRight } from 'lucide-react';
-import fawadPrinterImg from '../assets/projects/fawad-printer.png';
-import humanoidRoboticsImg from '../assets/projects/humanoid-robotics.png';
+import fawadPrinterImg from '../assets/projects/jarvis_os.png';
+import humanoidRoboticsImg from '../assets/projects/ml_dashboard.png';
 import weddingHallImg from '../assets/projects/wedding-hall.png';
 
 const Projects = () => {
@@ -11,24 +11,24 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "Fawad Printer",
-            category: "Web App",
+            title: "JARVIS Agentic OS",
+            category: "AI / OS Workflow",
             image: fawadPrinterImg,
-            link: "https://fawad-printer.web.app/",
-            github: "https://github.com/Ahmadshahzad1424/Fawad-printer",
-            tags: ["HTML", "CSS", "JS"],
-            description: "A comprehensive web application for managing printing services, showcasing responsive design and clear user interactions.",
-            accent: "from-blue-500/20 to-cyan-500/20"
+            link: "https://github.com/Ahmadshahzad1424",
+            github: "https://github.com/Ahmadshahzad1424",
+            tags: ["Python", "SQLite", "Socket.io", "LLM Agents"],
+            description: "A robust, autonomous AI operating system executing complex workflows. Engineered with SQLite WAL mode and real-time WebSockets to eliminate database locks.",
+            accent: "from-cyan-500/20 to-blue-500/20"
         },
         {
-            title: "Humanoid Robotics",
-            category: "Hackathon Project",
+            title: "Machine Learning Pipelines",
+            category: "Data Science Internship",
             image: humanoidRoboticsImg,
-            link: "https://hackathon-i-physical-ai-humanoid-ro-tau.vercel.app",
-            github: "https://github.com/Ahmadshahzad1424/Hackathon-I_-Physical-AI---Humanoid-Robotics",
-            tags: ["MDX", "React", "Next.js"],
-            description: "An innovative project developed during a hackathon that explores the integration of Physical AI with Humanoid Robotics, emphasizing cutting-edge tech concepts.",
-            accent: "from-purple-500/20 to-pink-500/20"
+            link: "https://github.com/Ahmadshahzad1424",
+            github: "https://github.com/Ahmadshahzad1424",
+            tags: ["Scikit-Learn", "Python", "Deep Learning"],
+            description: "Developed end-to-end ML models at CodeAlpha, including a Credit Scoring Model and Disease Prediction from medical datasets.",
+            accent: "from-emerald-500/20 to-teal-500/20"
         },
         {
             title: "Wedding Hall",

@@ -12,29 +12,29 @@ const Skills = () => {
             icon: <Cpu className="w-5 h-5" />,
             skills: [
                 { name: 'Python', level: 'Advanced', icon: 'https://img.icons8.com/color/50/000000/python.png' },
-                { name: 'Agentic AI', level: 'Researcher', icon: 'https://img.icons8.com/plasticine/100/bot.png' },
-                { name: 'Oracle SQL', level: 'Database', icon: 'https://img.icons8.com/color/48/000000/oracle-logo.png' },
-                { name: 'Logic Design', level: 'Mastery', icon: 'https://img.icons8.com/fluency/48/processor.png' }
+                { name: 'Agentic AI / RAG', level: 'Architecture', icon: 'https://img.icons8.com/plasticine/100/bot.png' },
+                { name: 'LLMs (Groq, Claude)', level: 'Integration', icon: 'https://img.icons8.com/fluency/48/artificial-intelligence.png' },
+                { name: 'Machine Learning', level: 'CodeAlpha', icon: 'https://img.icons8.com/fluency/48/combo-chart.png' }
             ]
         },
         {
             category: "Core Engineering",
             icon: <Layers className="w-5 h-5" />,
             skills: [
-                { name: 'React.js', level: 'Architecture', icon: 'https://img.icons8.com/color/50/000000/react-native.png' },
-                { name: 'JavaScript', level: 'Mastery', icon: 'https://img.icons8.com/color/50/000000/javascript.png' },
-                { name: 'MERN Stack', level: 'Full Stack', icon: 'https://img.icons8.com/color/50/000000/web.png' },
-                { name: 'Tailwind', level: 'Styling', icon: 'https://img.icons8.com/color/48/000000/tailwindcss.png' }
+                { name: 'React.js / Next.js', level: 'Frontend', icon: 'https://img.icons8.com/color/50/000000/react-native.png' },
+                { name: 'JavaScript / TS', level: 'Mastery', icon: 'https://img.icons8.com/color/50/000000/javascript.png' },
+                { name: 'SQLite / WAL mode', level: 'Backend', icon: 'https://img.icons8.com/color/50/000000/database.png' },
+                { name: 'WebSockets', level: 'Real-time', icon: 'https://img.icons8.com/color/50/000000/network.png' }
             ]
         },
         {
             category: "Creative Systems",
             icon: <Award className="w-5 h-5" />,
             skills: [
-                { name: 'Adobe PS', level: 'Visuals', icon: 'https://img.icons8.com/color/50/000000/adobe-photoshop.png' },
-                { name: 'UI / UX', level: 'Product', icon: 'https://img.icons8.com/color/48/000000/interface.png' },
-                { name: 'Figma', level: 'Design', icon: 'https://img.icons8.com/color/48/000000/figma--v1.png' },
-                { name: 'Deployment', level: 'DevOps', icon: 'https://img.icons8.com/color/48/000000/google-cloud-platform.png' }
+                { name: 'Tailwind CSS', level: 'Styling', icon: 'https://img.icons8.com/color/48/000000/tailwindcss.png' },
+                { name: 'Framer Motion', level: 'Animations', icon: 'https://img.icons8.com/fluency/48/video-trimming.png' },
+                { name: 'UI / UX Design', level: 'Product', icon: 'https://img.icons8.com/color/48/000000/interface.png' },
+                { name: 'Deployment (Vercel)', level: 'DevOps', icon: 'https://img.icons8.com/color/48/000000/server.png' }
             ]
         }
     ];

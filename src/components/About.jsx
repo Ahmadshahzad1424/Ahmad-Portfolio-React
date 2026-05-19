@@ -24,18 +24,14 @@ const About = () => {
                             <span className="font-mono text-sm tracking-widest uppercase font-bold">About Me</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                            Crafting pixels, <br />
-                            <span className="text-slate-500">Mastering logic.</span>
+                            Building intelligent systems, <br />
+                            <span className="text-slate-500">Mastering AI logic.</span>
                         </h2>
                         <p className="text-slate-400 text-lg leading-relaxed">
-                            Hey, I'm <strong>Ahmad Shahzad</strong> — a curious mind with a keyboard. I'm not just coding pixels; 
-                            I'm crafting smooth, responsive interfaces that users love. 
+                            Hey, I'm <strong>Ahmad Shahzad</strong> — a Full-Stack & AI Engineer. I specialize in building robust agentic AI solutions, retrieval-augmented generation (RAG) pipelines, and highly scalable backends.
                         </p>
                         <p className="text-slate-400 text-lg leading-relaxed">
-                            Currently pursuing <strong>BS in Artificial Intelligence</strong> (2023–2027) at the 
-                            University of Agriculture Peshawar, I fuse creativity with logic, one project at a time. 
-                            From <em>Divine Coders</em> to <strong>PIAIC</strong>, my mission is clear: create beautiful 
-                            things that solve real problems.
+                            Currently pursuing a <strong>BS in Artificial Intelligence</strong> (2023–2027) at the University of Agriculture Peshawar. I have recently completed a Machine Learning Internship at <strong>CodeAlpha</strong> and specialize in integrating advanced LLMs (Groq, Claude, Gemini) into secure, production-ready web platforms.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">

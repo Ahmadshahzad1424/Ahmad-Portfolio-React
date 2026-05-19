@@ -11,6 +11,7 @@ import certModernAi from '../assets/certificates/Fundamentals of Modern AI – P
 import certGeminiEducator from '../assets/certificates/Gemini Certified Student.jpg';
 import certIntelliForge from '../assets/certificates/IntelliForge AI – AI-Powered Campaign Intelligence Platform for Integrated Marketing Analytics & CRM..jpg';
 import certJs from '../assets/certificates/JS certification.png';
+import certAgentFactory from '../assets/certificates/Agent Factory Fundamentals.png';
 
 const Certificates = () => {
     const sectionRef = useRef(null);
@@ -85,11 +86,11 @@ const Certificates = () => {
             image: certDataAnalytics,
         },
         {
-            title: "AI Intelligence Workshop",
-            issuer: "Next Gennect HQ",
-            date: "JUL 2025",
-            icon: <Star className="w-5 h-5 text-amber-400" />,
-            image: certAiWorkshop,
+            title: "Agent Factory Fundamentals",
+            issuer: "Agent Factory",
+            date: "APR 2026",
+            icon: <Award className="w-5 h-5 text-indigo-400" />,
+            image: certAgentFactory,
         }
     ];
 
